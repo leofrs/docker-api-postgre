@@ -10,6 +10,4 @@ RUN npm i
 
 RUN npm run build
 
-RUN npx prisma migrate dev --name users
-
-CMD [ "npm", "start" ]
+CMD [ "npx","prisma", "migrate", "dev", "--name", "users", "npm", "start" ]
